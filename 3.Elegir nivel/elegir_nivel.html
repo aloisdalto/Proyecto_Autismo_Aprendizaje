@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portal Educativo para el Aprendizaje de Niños con Transtorno Espectro Autista</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../Estilos/style.css">
+    <link rel="shortcut icon" href="../img/icono.png" type="image/x-icon">
+</head>
+<body>
+    <header id="encabezado">
+        <a href="">Autismo y Aprendizaje</a>
+        <nav>
+            <a href="../1.Pagina de Inicio/index.html">Inicio</a>
+        </nav>
+    </header>
+    <div class="body-nivel">
+        <div class="header-img">
+            <h1 >Recursos Didacticos para el Aprendizaje de Niños con Transtorno Espectro Autista</h1>
+        </div>
+        <div class="container-1">
+            <h2>Elige el nivel de Autismo</h2>
+            <div class="elegir-nivel">
+                <div class="nivel">
+                    <div class="info-1">
+                        <input type="radio" name="nivel" id="nivel-bajo">
+                        <h4>Nivel Bajo</h4>
+                    </div>
+                    <img src="../img/pexels-mikhail-nilov-8654129.jpg" alt="bajo">
+                </div>
+                <h3>ó</h3>
+                <div class="nivel">
+                    <div class="info-1">
+                        <input type="radio" name="nivel" id="nivel-medio">
+                        <h4>Nivel Medio</h4>
+                    </div>
+                    <img src="../img/pexels-mikhail-nilov-8654293.jpg" alt="medio">
+                </div>
+            </div>
+            <button onclick="redireccionar()">Comenzar</button>
+        </div>
+    </div>
+    <footer>
+        <section>
+            <a href="mailto:aloisdalto@gmail.com">Contacto</a>
+            <a href="#encabezado">Ir Arriba</a>
+        </section>
+        <p>Copyright © 2023</p>
+    </footer>
+
+    <script>
+        function redireccionar() {
+          if (document.getElementById('nivel-bajo').checked) {
+            window.location.href = '../4.Nivel Bajo/nivel_bajo.html';
+          } else if (document.getElementById('nivel-medio').checked) {
+            window.location.href = '../5.Nivel Medio/nivel_medio.html';
+          } else {
+            alert("Por Favor, selecciona una opcion");
+          }
+        }
+    </script>
+</body>
+</html>

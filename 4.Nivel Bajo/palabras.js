@@ -1,0 +1,1 @@
+const words = ['Tijeras','Martillo', 'Destornillador','Pinzas','Llave','Escoba','Pala','Escalera','Hacha','Brocha','Rastrillo','Alicate','Taladro','Rodillo','Mazo'];

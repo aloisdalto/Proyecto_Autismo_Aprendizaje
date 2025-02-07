@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Las Herramientas - Autismo y Aprendizaje</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;500;700&display=swap" rel="stylesheet">
+    <link href="http://fonts.cdnfonts.com/css/sf-pixelate" rel="stylesheet">
+    <link rel="stylesheet" href="../Estilos/style.css">
+    <link rel="shortcut icon" href="../img/icono.png" type="image/x-icon">
+    <script type="text/javascript" src="palabras.js" defer></script>
+    <script type="text/javascript" src="script.js" defer></script>
+</head>
+<body>
+    <header id="encabezado">
+        <a href="nivel_bajo.html">Nivel Bajo - Recursos Didacticos</a>
+        <nav>
+            <a href="../1.Pagina de Inicio/index.html">Inicio</a>
+            <a href="../3.Elegir nivel/elegir_nivel.html">Nivel</a>
+        </nav>
+    </header>
+
+    <div class="body-personas">
+        <h1>Las Herramientas. Juego Ahorcado</h1>
+        <h2>El ahorcado es un juego en el que tienes que adivinar palabras letra por letra antes de que se complete el dibujo de un muñeco. Si logras adivinar la palabra, ¡ganarás! Si no, el muñeco será completado y habrás perdido. ¡Diviértete!. Las Palabras que saldran en el juego del ahorcado seran las siguientes: <strong>Tijeras, Martillo, Destornillador, Pinzas,Llave, Escoba, Pala, Escalera, Hacha, Brocha, Rastrillo, Alicate, Taladro, Rodillo, Mazo</strong>.</h2>
+        
+        <div class="body-ahorcado">
+            <div>
+                <canvas id="canvas"></canvas>
+                <div id="usedLetters"></div>
+            </div>
+            <div id="usedLetters"></div>
+            <div id="wordContainer"></div>
+            <button id="startButton">EMPEZAR</button>
+        </div>
+        
+
+        <button onclick="verificar()">Siguiente</button>
+    </div>
+
+    <footer>
+        <section>
+            <a href="mailto:aloisdalto@gmail.com">Contacto</a>
+            <a href="#encabezado">Ir Arriba</a>
+        </section>
+        <p>Copyright © 2023</p>
+    </footer>
+</body>
+</html>

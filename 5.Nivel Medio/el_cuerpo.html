@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Partes del Cuerpo - Autismo y Aprendizaje</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../Estilos/style.css">
+    <link rel="shortcut icon" href="../img/icono.png" type="image/x-icon">
+</head>
+<body>
+    <header id="encabezado">
+        <a href="nivel_medio.html">Nivel Medio - Recursos Didacticos</a>
+        <nav>
+            <a href="../1.Pagina de Inicio/index.html">Inicio</a>
+            <a href="../3.Elegir nivel/elegir_nivel.html">Nivel</a>
+        </nav>
+    </header>
+
+    <div class="body-personas">
+        <h1>Partes del Cuerpo. Gramática-Morfosintaxis</h1>
+        <h2>Completa las palabras eligiendo una de las sílabas que están debajo de la imagen:</h2>
+        
+        <div class="preguntas">
+            <div class="preg">
+                <img src="../img/cuerpo_1.jpg" alt="cuerpo-1">
+                <div class="opciones">
+                    <div class="opc">
+                        <input type="radio" name="preg-1" value="opcion1">
+                        <p>E</p>
+                    </div>
+                    <div class="opc">
+                        <input type="radio" name="preg-1" value="opcion2">
+                        <p>DI</p>
+                    </div>
+                    <div class="opc">
+                        <input type="radio" name="preg-1" value="opcion3">
+                        <p>NA</p>
+                    </div>
+                    <div class="opc">
+                        <input type="radio" name="preg-1" value="opcion4">
+                        <p>JA</p>
+                    </div>
+                </div> 
+            </div>
+            <div class="preg">
+                <img src="../img/cuerpo_2.jpg" alt="cuerpo-2">
+                <div class="opciones">
+                    <div class="opc">
+                        <input type="radio" name="preg-2" value="opcion1">
+                        <p>JA</p>
+                    </div>
+                    <div class="opc">
+                        <input type="radio" name="preg-2" value="opcion2">
+                        <p>NA</p>
+                    </div>
+                    <div class="opc">
+                        <input type="radio" name="preg-2" value="opcion3">
+                        <p>PE</p>
+                    </div>
+                    <div class="opc">
+                        <input type="radio" name="preg-2" value="opcion4">
+                        <p>NI</p>
+                    </div>
+                </div>
+                
+            </div>
+            <div class="preg">
+                <img src="../img/cuerpo_3ç.jpg" alt="cuerpo-3">
+                <div class="opciones">
+                    <div class="opc">
+                        <input type="radio" name="preg-3" value="opcion1">
+                        <p>E</p>
+                    </div>
+                    <div class="opc">
+                        <input type="radio" name="preg-3" value="opcion2">
+                        <p>LA</p>
+                    </div>
+                    <div class="opc">
+                        <input type="radio" name="preg-3" value="opcion3">
+                        <p>NI</p>
+                    </div>
+                    <div class="opc">
+                        <input type="radio" name="preg-3" value="opcion4">
+                        <p>RO</p>
+                    </div>
+                </div>
+                
+            </div>
+            <div class="preg">
+                <img src="../img/cuerpo_4.jpg" alt="cuerpo-4">
+                <div class="opciones">
+                    <div class="opc">
+                        <input type="radio" name="preg-4" value="opcion1">
+                        <p>E</p>
+                    </div>
+                    <div class="opc">
+                        <input type="radio" name="preg-4" value="opcion2">
+                        <p>GUA</p>
+                    </div>
+                    <div class="opc">
+                        <input type="radio" name="preg-4" value="opcion3">
+                        <p>NA</p>
+                    </div>
+                    <div class="opc">
+                        <input type="radio" name="preg-4" value="opcion4">
+                        <p>LO</p>
+                    </div>
+                </div> 
+            </div>
+        </div>
+        
+        <button onclick="verificar()">Siguiente</button>
+    </div>
+
+    <footer>
+        <section>
+            <a href="mailto:aloisdalto@gmail.com">Contacto</a>
+            <a href="#encabezado">Ir Arriba</a>
+        </section>
+        <p>Copyright © 2023</p>
+    </footer>
+
+    <script>
+        function verificar() {
+            var respuesta1 = document.querySelector('input[name="preg-1"]:checked');
+            var respuesta2 = document.querySelector('input[name="preg-2"]:checked');
+            var respuesta3 = document.querySelector('input[name="preg-3"]:checked');
+            var respuesta4 = document.querySelector('input[name="preg-4"]:checked');
+
+            if (respuesta1 && respuesta1.value === "opcion4" &&
+            respuesta2 && respuesta2.value === "opcion3" &&
+            respuesta3 && respuesta3.value === "opcion1" &&
+            respuesta4 && respuesta4.value === "opcion3")  {
+                alert("¡Felicidades, las respuestas son correctas!")
+                window.location.href = "los_sentimientos.html";
+        }else {
+            alert("Las respuestas son incorrectas, Intente otra vez!");
+        }
+    }
+    </script>
+</body>
+</html>
